@@ -34,9 +34,29 @@ export default function About() {
       >
         <h2 className="text-5xl font-extrabold text-blue-400">About Me</h2>
         <p className="text-lg text-gray-300 mt-6 max-w-3xl leading-relaxed">
-          I am a DevOps Engineer passionate about cloud computing, automation, and scalable infrastructure. 
-          With experience in CI/CD, Kubernetes, and Terraform, I specialize in building highly efficient 
-          deployment pipelines and cloud architectures.
+        Hi, I’m Kiril Kirilov, a 28-year-old aspiring DevOps Engineer with a passion for automation, cloud technologies, and infrastructure as code.
+
+Currently, I work as a Sales Specialist for Google Maps, where I help businesses leverage location intelligence to enhance their operations. But my true passion lies in DevOps—building, automating, and optimizing infrastructure for seamless software delivery.
+
+💡 Why DevOps?
+Over the years, I’ve been fascinated by how automation and cloud computing revolutionize modern software development. My goal is to transition into a Junior DevOps role, where I can apply my skills in:
+✅ CI/CD Pipelines – Automating deployments for faster, error-free releases
+✅ Infrastructure as Code (IaC) – Managing scalable infrastructure using Terraform & Ansible
+✅ Cloud Platforms – Gaining hands-on experience with AWS, GCP, and Kubernetes
+✅ Monitoring & Security – Ensuring reliability, performance, and security of cloud environments
+
+📖 My Learning Journey
+I’ve been actively learning DevOps through courses, hands-on projects, and certifications. My journey includes:
+🚀 KodeKloud & Practical Labs for hands-on Kubernetes & Terraform experience
+🚀 Building CI/CD Pipelines using GitHub Actions & Docker
+🚀 Deploying Personal Projects on Vercel & Cloud Platforms
+
+🎯 What’s Next?
+I’m looking for opportunities where I can grow as a Junior DevOps Engineer, contribute to exciting projects, and continue learning in a collaborative environment.
+
+If you’re looking for a motivated, adaptable, and automation-driven professional, let’s connect!
+
+📩 Feel free to reach out! 🚀
         </p>
       </motion.main>
       
