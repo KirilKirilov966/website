@@ -8,7 +8,7 @@ export default function About() {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
       <Head>
         <title>About | Kiril Kirilov</title>
-        <meta name="description" content="Learn more about Kiril Kirilov and his DevOps journey." />
+        <meta name="description" content="Learn more about Kiril Kirilov and his transition to DevOps." />
       </Head>
       
       <motion.header 
@@ -34,33 +34,32 @@ export default function About() {
       >
         <h2 className="text-5xl font-extrabold text-blue-400">About Me</h2>
         <p className="text-lg text-gray-300 mt-6 max-w-3xl leading-relaxed">
-          Hi, I’m <span className="text-blue-400 font-semibold">Kiril Kirilov</span>, a <span className="font-semibold">28-year-old aspiring DevOps Engineer</span> with a passion for automation, cloud technologies, and infrastructure as code.
+          Hi, I’m <span className="text-blue-400 font-semibold">Kiril Kirilov</span>, a <span className="font-semibold">28-year-old transitioning into DevOps</span>. With a background in sales at Google Maps, I have developed a deep understanding of technology solutions and how they impact businesses. Now, I am shifting my focus towards **cloud automation, infrastructure as code, and DevOps best practices**.
         </p>
+        <h3 className="text-3xl font-bold text-blue-400 mt-10">💡 My DevOps Transition</h3>
         <p className="text-lg text-gray-300 mt-4 max-w-3xl leading-relaxed">
-          Currently, I work as a <span className="font-semibold">Sales Specialist for Google Maps</span>, where I help businesses leverage location intelligence to enhance their operations. But my true passion lies in <span className="font-semibold">DevOps</span>—building, automating, and optimizing infrastructure for seamless software delivery.
-        </p>
-        <h3 className="text-3xl font-bold text-blue-400 mt-10">💡 Why DevOps?</h3>
-        <p className="text-lg text-gray-300 mt-4 max-w-3xl leading-relaxed">
-          Over the years, I’ve been fascinated by how <span className="font-semibold">automation and cloud computing</span> revolutionize modern software development. My goal is to transition into a <span className="font-semibold">Junior DevOps role</span>, where I can apply my skills in:
+          My journey into DevOps began with self-learning, practical labs, and hands-on projects. I am passionate about building efficient, automated, and scalable infrastructure. Here are the technologies I have been actively working with:
         </p>
         <ul className="text-lg text-gray-300 mt-4 max-w-3xl leading-relaxed text-left">
-          <li>✅ <span className="font-semibold">CI/CD Pipelines</span> – Automating deployments for faster, error-free releases</li>
-          <li>✅ <span className="font-semibold">Infrastructure as Code (IaC)</span> – Managing scalable infrastructure using Terraform & Ansible</li>
-          <li>✅ <span className="font-semibold">Cloud Platforms</span> – Gaining hands-on experience with AWS, GCP, and Kubernetes</li>
-          <li>✅ <span className="font-semibold">Monitoring & Security</span> – Ensuring reliability, performance, and security of cloud environments</li>
+          <li>✅ <span className="font-semibold">Linux</span> – Proficient in system administration and shell scripting</li>
+          <li>✅ <span className="font-semibold">Bash & Python</span> – Automating workflows and system processes</li>
+          <li>✅ <span className="font-semibold">Docker & Kubernetes</span> – Containerization and orchestration for scalable applications</li>
+          <li>✅ <span className="font-semibold">AWS (basic)</span> – Learning cloud infrastructure and services</li>
+          <li>✅ <span className="font-semibold">Terraform & Ansible</span> – Infrastructure as Code (IaC) and configuration management</li>
         </ul>
-        <h3 className="text-3xl font-bold text-blue-400 mt-10">📖 My Learning Journey</h3>
+        <h3 className="text-3xl font-bold text-blue-400 mt-10">📖 My Learning & Projects</h3>
         <ul className="text-lg text-gray-300 mt-4 max-w-3xl leading-relaxed text-left">
-          <li>🚀 <span className="font-semibold">KodeKloud & Practical Labs</span> for hands-on Kubernetes & Terraform experience</li>
-          <li>🚀 <span className="font-semibold">Building CI/CD Pipelines</span> using GitHub Actions & Docker</li>
-          <li>🚀 <span className="font-semibold">Deploying Personal Projects</span> on Vercel & Cloud Platforms</li>
+          <li>🚀 **KodeKloud & Practical Labs** – Hands-on experience with Kubernetes, Terraform, and CI/CD</li>
+          <li>🚀 **Pragmatic DevOps Essentials** – Gaining a strong foundation in automation, cloud infrastructure, and DevOps methodologies</li>
+          <li>🚀 **Personal DevOps Portfolio** – Built and deployed this site using Next.js, Vercel, and GitHub Actions</li>
+          <li>🚀 **Automated Deployments** – Implemented CI/CD pipelines with Docker & Kubernetes</li>
         </ul>
         <h3 className="text-3xl font-bold text-blue-400 mt-10">🎯 What’s Next?</h3>
         <p className="text-lg text-gray-300 mt-4 max-w-3xl leading-relaxed">
-          I’m looking for opportunities where I can <span className="font-semibold">grow as a Junior DevOps Engineer</span>, contribute to exciting projects, and continue learning in a collaborative environment.
+          I am actively seeking opportunities to **start my career as a Junior DevOps Engineer**, contribute to exciting projects, and refine my expertise in cloud automation. I am eager to work with experienced teams where I can learn, grow, and make an impact.
         </p>
         <p className="text-lg text-gray-300 mt-4 max-w-3xl leading-relaxed">
-          If you’re looking for a <span className="font-semibold">motivated, adaptable, and automation-driven professional</span>, let’s connect!
+          If you’re looking for a **motivated, adaptable, and technically driven professional**, let’s connect!
         </p>
         <p className="text-lg text-gray-300 mt-6 font-semibold">📩 Feel free to reach out! 🚀</p>
       </motion.main>
