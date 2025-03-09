@@ -7,36 +7,32 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-black text-white overflow-hidden">
+    <div className="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
       <Head>
         <title>Kiril Kirilov | DevOps Portfolio</title>
         <meta name="description" content="Follow Kiril Kirilov's DevOps journey and projects." />
       </Head>
-
-      {/* Modern Animated Background */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <motion.div
-          className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-indigo-900 via-gray-900 to-black opacity-70"
-          animate={{ scale: [1, 1.5, 1], rotate: [0, 10, -10, 0] }}
-          transition={{ duration: 15, repeat: Infinity, repeatType: "mirror" }}
-        />
-        <motion.div
-          className="absolute bottom-10 left-10 w-72 h-72 bg-blue-500 rounded-full opacity-20 blur-3xl"
-          animate={{ x: [0, 50, -50, 0], y: [0, 30, -30, 0] }}
-          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div
-          className="absolute top-10 right-10 w-48 h-48 bg-purple-500 rounded-full opacity-30 blur-3xl"
-          animate={{ x: [0, -40, 40, 0], y: [0, -20, 20, 0] }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        />
-      </div>
       
+      <motion.header 
+        initial={{ y: -100, opacity: 0 }} 
+        animate={{ y: 0, opacity: 1 }} 
+        transition={{ duration: 0.8 }}
+        className="py-6 px-10 flex justify-between items-center bg-gray-800 shadow-lg border-b border-gray-700 backdrop-blur-md bg-opacity-80"
+      >
+        <h1 className="text-4xl font-bold text-blue-400">Kiril Kirilov</h1>
+        <nav className="flex space-x-6 text-lg">
+          <Link href="/about" className="hover:text-blue-400 transition duration-300">About</Link>
+          <Link href="/projects" className="hover:text-blue-400 transition duration-300">Projects</Link>
+          <Link href="/blog" className="hover:text-blue-400 transition duration-300">Blog</Link>
+          <Link href="/contact" className="hover:text-blue-400 transition duration-300">Contact</Link>
+        </nav>
+      </motion.header>
+
       <motion.main 
         initial={{ opacity: 0, scale: 0.9 }} 
         animate={{ opacity: 1, scale: 1 }} 
         transition={{ duration: 1 }}
-        className="relative flex flex-col items-center justify-center text-center py-20 px-6 z-10"
+        className="flex flex-col items-center justify-center text-center py-20 px-6"
       >
         <motion.h2 className="text-6xl font-extrabold text-blue-400" animate={{ scale: [1, 1.1, 1] }} transition={{ repeat: Infinity, duration: 2 }}>My DevOps Journey</motion.h2>
         <p className="text-xl text-gray-300 mt-6 max-w-2xl leading-relaxed">
@@ -77,6 +73,15 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      <motion.footer 
+        initial={{ y: 100, opacity: 0 }} 
+        animate={{ y: 0, opacity: 1 }} 
+        transition={{ duration: 0.8 }}
+        className="py-6 text-center bg-gray-800 mt-16 border-t border-gray-700 shadow-lg"
+      >
+        <p className="text-gray-400 text-lg">&copy; 2025 Kiril Kirilov | Sharing My DevOps Journey</p>
+      </motion.footer>
     </div>
   );
 }
