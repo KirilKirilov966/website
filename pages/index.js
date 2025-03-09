@@ -7,17 +7,26 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
+    <div className="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
       <Head>
         <title>Kiril Kirilov | DevOps Portfolio</title>
         <meta name="description" content="Follow Kiril Kirilov's DevOps journey and projects." />
       </Head>
+
+      {/* Animated Background */}
+      <div className="absolute inset-0 z-0">
+        <motion.div
+          className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900 via-gray-800 to-black opacity-70"
+          animate={{ scale: [1, 1.1, 1], rotate: [0, 10, -10, 0] }}
+          transition={{ duration: 10, repeat: Infinity, repeatType: "reverse" }}
+        />
+      </div>
       
       <motion.header 
         initial={{ y: -100, opacity: 0 }} 
         animate={{ y: 0, opacity: 1 }} 
         transition={{ duration: 0.8 }}
-        className="py-6 px-10 flex justify-between items-center bg-gray-800 shadow-lg border-b border-gray-700 backdrop-blur-md bg-opacity-80"
+        className="relative py-6 px-10 flex justify-between items-center bg-gray-800 shadow-lg border-b border-gray-700 backdrop-blur-md bg-opacity-80 z-10"
       >
         <h1 className="text-4xl font-bold text-blue-400">Kiril Kirilov</h1>
         <nav className="flex space-x-6 text-lg">
@@ -32,7 +41,7 @@ export default function Home() {
         initial={{ opacity: 0, scale: 0.9 }} 
         animate={{ opacity: 1, scale: 1 }} 
         transition={{ duration: 1 }}
-        className="flex flex-col items-center justify-center text-center py-20 px-6"
+        className="relative flex flex-col items-center justify-center text-center py-20 px-6 z-10"
       >
         <motion.h2 className="text-6xl font-extrabold text-blue-400" animate={{ scale: [1, 1.1, 1] }} transition={{ repeat: Infinity, duration: 2 }}>My DevOps Journey</motion.h2>
         <p className="text-xl text-gray-300 mt-6 max-w-2xl leading-relaxed">
@@ -78,7 +87,7 @@ export default function Home() {
         initial={{ y: 100, opacity: 0 }} 
         animate={{ y: 0, opacity: 1 }} 
         transition={{ duration: 0.8 }}
-        className="py-6 text-center bg-gray-800 mt-16 border-t border-gray-700 shadow-lg"
+        className="relative py-6 text-center bg-gray-800 mt-16 border-t border-gray-700 shadow-lg z-10"
       >
         <p className="text-gray-400 text-lg">&copy; 2025 Kiril Kirilov | Sharing My DevOps Journey</p>
       </motion.footer>
