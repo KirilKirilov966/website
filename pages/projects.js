@@ -40,12 +40,12 @@ export default function Projects() {
           <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-gray-900 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
             <h3 className="text-2xl font-semibold text-blue-300">CI/CD Pipeline Implementation</h3>
             <p className="text-gray-400 mt-3">Built an automated deployment pipeline using GitHub Actions, Docker, and Kubernetes.</p>
-            <Link href="https://github.com/yourgithubrepo" className="text-blue-400 hover:underline mt-4 block">View Project</Link>
+            <Link href="https://github.com/KirilKirilov966" className="text-blue-400 hover:underline mt-4 block">View Project</Link>
           </motion.div>
           <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-gray-900 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
             <h3 className="text-2xl font-semibold text-blue-300">Infrastructure as Code (IaC)</h3>
             <p className="text-gray-400 mt-3">Designed cloud infrastructure using Terraform and Ansible for automated provisioning.</p>
-            <Link href="https://github.com/yourgithubrepo" className="text-blue-400 hover:underline mt-4 block">View Project</Link>
+            <Link href="https://github.com/KirilKirilov966" className="text-blue-400 hover:underline mt-4 block">View Project</Link>
           </motion.div>
         </div>
       </motion.main>
