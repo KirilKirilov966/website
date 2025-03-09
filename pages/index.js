@@ -13,12 +13,22 @@ export default function Home() {
         <meta name="description" content="Follow Kiril Kirilov's DevOps journey and projects." />
       </Head>
 
-      {/* Animated Background */}
+      {/* Enhanced Animated Background */}
       <div className="absolute inset-0 z-0">
         <motion.div
           className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900 via-gray-800 to-black opacity-70"
-          animate={{ scale: [1, 1.1, 1], rotate: [0, 10, -10, 0] }}
-          transition={{ duration: 10, repeat: Infinity, repeatType: "reverse" }}
+          animate={{ scale: [1, 1.2, 1], rotate: [0, 15, -15, 0] }}
+          transition={{ duration: 15, repeat: Infinity, repeatType: "mirror" }}
+        />
+        <motion.div
+          className="absolute bottom-10 left-10 w-48 h-48 bg-blue-400 rounded-full opacity-30 blur-3xl"
+          animate={{ x: [0, 50, -50, 0], y: [0, 20, -20, 0] }}
+          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+        />
+        <motion.div
+          className="absolute top-10 right-10 w-36 h-36 bg-pink-400 rounded-full opacity-30 blur-3xl"
+          animate={{ x: [0, -40, 40, 0], y: [0, -20, 20, 0] }}
+          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
         />
       </div>
       
