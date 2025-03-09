@@ -55,7 +55,7 @@ export default function Home() {
                 <h4 className="text-2xl font-semibold text-blue-300">CI/CD Pipeline Implementation</h4>
                 <p className="text-gray-400 mt-3">Built an automated deployment pipeline using GitHub Actions, Docker, and Kubernetes.</p>
                 <Button className="mt-5 bg-blue-500 px-6 py-2 rounded-lg hover:bg-blue-600">
-                  <Link href="https://github.com/KirilKirilov966">View Project</Link>
+                  <Link href="https://github.com/KirilKirilov966/ci-cd-web-app">View Project</Link>
                 </Button>
               </CardContent>
             </Card>
