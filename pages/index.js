@@ -7,47 +7,31 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
+    <div className="relative min-h-screen bg-black text-white overflow-hidden">
       <Head>
         <title>Kiril Kirilov | DevOps Portfolio</title>
         <meta name="description" content="Follow Kiril Kirilov's DevOps journey and projects." />
       </Head>
 
-      {/* Enhanced Animated Background */}
-      <div className="absolute inset-0 z-0">
+      {/* Modern Animated Background */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <motion.div
-          className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900 via-gray-800 to-black opacity-70"
-          animate={{ scale: [1, 1.2, 1], rotate: [0, 15, -15, 0] }}
+          className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-indigo-900 via-gray-900 to-black opacity-70"
+          animate={{ scale: [1, 1.5, 1], rotate: [0, 10, -10, 0] }}
           transition={{ duration: 15, repeat: Infinity, repeatType: "mirror" }}
+        />
+        <motion.div
+          className="absolute bottom-10 left-10 w-72 h-72 bg-blue-500 rounded-full opacity-20 blur-3xl"
+          animate={{ x: [0, 50, -50, 0], y: [0, 30, -30, 0] }}
+          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+        />
+        <motion.div
+          className="absolute top-10 right-10 w-48 h-48 bg-purple-500 rounded-full opacity-30 blur-3xl"
+          animate={{ x: [0, -40, 40, 0], y: [0, -20, 20, 0] }}
+          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         />
       </div>
       
-      <motion.header 
-        initial={{ y: -100, opacity: 0 }} 
-        animate={{ y: 0, opacity: 1 }} 
-        whileHover={{ scale: 1.02 }}
-        transition={{ duration: 0.8 }}
-        className="relative py-6 px-10 flex justify-between items-center bg-gray-800 shadow-lg border-b border-gray-700 backdrop-blur-md bg-opacity-80 z-10 overflow-hidden"
-      >
-        <motion.h1 className="text-4xl font-bold text-blue-400 tracking-wide" whileHover={{ scale: 1.1, color: "#60A5FA", rotate: [0, 5, -5, 0] }}>
-          Kiril Kirilov
-        </motion.h1>
-        <nav className="flex space-x-6 text-lg">
-          <motion.div whileHover={{ scale: 1.15, y: -3 }}>
-            <Link href="/about" className="hover:text-blue-400 transition duration-300">About</Link>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.15, y: -3 }}>
-            <Link href="/projects" className="hover:text-blue-400 transition duration-300">Projects</Link>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.15, y: -3 }}>
-            <Link href="/blog" className="hover:text-blue-400 transition duration-300">Blog</Link>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.15, y: -3 }}>
-            <Link href="/contact" className="hover:text-blue-400 transition duration-300">Contact</Link>
-          </motion.div>
-        </nav>
-      </motion.header>
-
       <motion.main 
         initial={{ opacity: 0, scale: 0.9 }} 
         animate={{ opacity: 1, scale: 1 }} 
