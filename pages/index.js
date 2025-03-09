@@ -13,11 +13,20 @@ export default function Home() {
         <meta name="description" content="Follow Kiril Kirilov's DevOps journey and projects." />
       </Head>
       
+      {/* Animated Background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <motion.div
+          className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-indigo-900 via-gray-900 to-black opacity-70"
+          animate={{ scale: [1, 1.5, 1], rotate: [0, 10, -10, 0] }}
+          transition={{ duration: 15, repeat: Infinity, repeatType: "mirror" }}
+        />
+      </div>
+      
       <motion.header 
         initial={{ y: -100, opacity: 0 }} 
         animate={{ y: 0, opacity: 1 }} 
         transition={{ duration: 0.8 }}
-        className="py-6 px-10 flex justify-between items-center bg-gray-800 shadow-lg border-b border-gray-700 backdrop-blur-md bg-opacity-80"
+        className="py-6 px-10 flex justify-between items-center bg-gray-800 shadow-lg border-b border-gray-700 backdrop-blur-md bg-opacity-80 relative z-10"
       >
         <h1 className="text-4xl font-bold text-blue-400">Kiril Kirilov</h1>
         <nav className="flex space-x-6 text-lg">
@@ -32,7 +41,7 @@ export default function Home() {
         initial={{ opacity: 0, scale: 0.9 }} 
         animate={{ opacity: 1, scale: 1 }} 
         transition={{ duration: 1 }}
-        className="flex flex-col items-center justify-center text-center py-20 px-6"
+        className="flex flex-col items-center justify-center text-center py-20 px-6 relative z-10"
       >
         <motion.h2 className="text-6xl font-extrabold text-blue-400" animate={{ scale: [1, 1.1, 1] }} transition={{ repeat: Infinity, duration: 2 }}>My DevOps Journey</motion.h2>
         <p className="text-xl text-gray-300 mt-6 max-w-2xl leading-relaxed">
