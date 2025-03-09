@@ -20,30 +20,31 @@ export default function Home() {
           animate={{ scale: [1, 1.2, 1], rotate: [0, 15, -15, 0] }}
           transition={{ duration: 15, repeat: Infinity, repeatType: "mirror" }}
         />
-        <motion.div
-          className="absolute bottom-10 left-10 w-48 h-48 bg-blue-400 rounded-full opacity-30 blur-3xl"
-          animate={{ x: [0, 50, -50, 0], y: [0, 20, -20, 0] }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div
-          className="absolute top-10 right-10 w-36 h-36 bg-pink-400 rounded-full opacity-30 blur-3xl"
-          animate={{ x: [0, -40, 40, 0], y: [0, -20, 20, 0] }}
-          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-        />
       </div>
       
       <motion.header 
         initial={{ y: -100, opacity: 0 }} 
         animate={{ y: 0, opacity: 1 }} 
+        whileHover={{ scale: 1.02 }}
         transition={{ duration: 0.8 }}
-        className="relative py-6 px-10 flex justify-between items-center bg-gray-800 shadow-lg border-b border-gray-700 backdrop-blur-md bg-opacity-80 z-10"
+        className="relative py-6 px-10 flex justify-between items-center bg-gray-800 shadow-lg border-b border-gray-700 backdrop-blur-md bg-opacity-80 z-10 overflow-hidden"
       >
-        <h1 className="text-4xl font-bold text-blue-400">Kiril Kirilov</h1>
+        <motion.h1 className="text-4xl font-bold text-blue-400 tracking-wide" whileHover={{ scale: 1.1, color: "#60A5FA", rotate: [0, 5, -5, 0] }}>
+          Kiril Kirilov
+        </motion.h1>
         <nav className="flex space-x-6 text-lg">
-          <Link href="/about" className="hover:text-blue-400 transition duration-300">About</Link>
-          <Link href="/projects" className="hover:text-blue-400 transition duration-300">Projects</Link>
-          <Link href="/blog" className="hover:text-blue-400 transition duration-300">Blog</Link>
-          <Link href="/contact" className="hover:text-blue-400 transition duration-300">Contact</Link>
+          <motion.div whileHover={{ scale: 1.15, y: -3 }}>
+            <Link href="/about" className="hover:text-blue-400 transition duration-300">About</Link>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.15, y: -3 }}>
+            <Link href="/projects" className="hover:text-blue-400 transition duration-300">Projects</Link>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.15, y: -3 }}>
+            <Link href="/blog" className="hover:text-blue-400 transition duration-300">Blog</Link>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.15, y: -3 }}>
+            <Link href="/contact" className="hover:text-blue-400 transition duration-300">Contact</Link>
+          </motion.div>
         </nav>
       </motion.header>
 
@@ -82,7 +83,7 @@ export default function Home() {
           <motion.div whileHover={{ scale: 1.05 }}>
             <Card>
               <CardContent className="p-6 bg-gray-900 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
-                <h4 className="text-2xl font-semibold text-blue-300">Infrastructure as code (IaC)</h4>
+                <h4 className="text-2xl font-semibold text-blue-300">Infrastructure as Code (IaC)</h4>
                 <p className="text-gray-400 mt-3">Designed cloud infrastructure using Terraform and Ansible for automated provisioning.</p>
                 <Button className="mt-5 bg-blue-500 px-6 py-2 rounded-lg hover:bg-blue-600">
                   <Link href="https://github.com/KirilKirilov966">View Project</Link>
@@ -92,15 +93,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
-      <motion.footer 
-        initial={{ y: 100, opacity: 0 }} 
-        animate={{ y: 0, opacity: 1 }} 
-        transition={{ duration: 0.8 }}
-        className="relative py-6 text-center bg-gray-800 mt-16 border-t border-gray-700 shadow-lg z-10"
-      >
-        <p className="text-gray-400 text-lg">&copy; 2025 Kiril Kirilov | Sharing My DevOps Journey</p>
-      </motion.footer>
     </div>
   );
 }
