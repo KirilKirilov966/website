@@ -12,7 +12,7 @@
     "framer-motion": "^12.4.10",
     "git": "^0.1.5",
     "gitr": "^1.0.0",
-    "next": "latest",
+    "next": "^15.2.1",
     "react": "latest",
     "react-dom": "latest"
   },
