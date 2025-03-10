@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { motion } from "framer-motion";
-import "../styles/globals.css";
 
 export default function Home() {
   useEffect(() => {
