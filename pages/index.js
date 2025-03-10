@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { motion } from "framer-motion";
+import "../styles/globals.css";
 
 export default function Home() {
   useEffect(() => {
@@ -41,10 +42,18 @@ export default function Home() {
       >
         <h1 className="text-4xl font-bold text-blue-400">Kiril Kirilov</h1>
         <nav className="flex space-x-6 text-lg">
-          <Link href="/about" className="hover:text-blue-400 transition duration-300">About</Link>
-          <Link href="/projects" className="hover:text-blue-400 transition duration-300">Projects</Link>
-          <Link href="/blog" className="hover:text-blue-400 transition duration-300">Blog</Link>
-          <Link href="/contact" className="hover:text-blue-400 transition duration-300">Contact</Link>
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <Link href="/about" className="hover:text-blue-400 transition duration-300">About</Link>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <Link href="/projects" className="hover:text-blue-400 transition duration-300">Projects</Link>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <Link href="/blog" className="hover:text-blue-400 transition duration-300">Blog</Link>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <Link href="/contact" className="hover:text-blue-400 transition duration-300">Contact</Link>
+          </motion.div>
         </nav>
       </motion.header>
 
@@ -58,11 +67,6 @@ export default function Home() {
         <p className="text-xl text-gray-300 mt-6 max-w-2xl leading-relaxed">
           Exploring cloud technologies, automation, and scalable infrastructure. Passionate about CI/CD, Kubernetes, and Terraform.
         </p>
-        <motion.div whileHover={{ scale: 1.1 }}>
-          <Button className="mt-8 bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-xl text-lg font-semibold shadow-lg">
-            <Link href="/projects">Explore My Work</Link>
-          </Button>
-        </motion.div>
       </motion.main>
       
       <section className="relative py-20 px-10 bg-gray-800 rounded-xl shadow-lg mx-10 overflow-hidden">
