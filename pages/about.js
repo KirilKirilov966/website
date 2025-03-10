@@ -36,7 +36,7 @@ export default function About() {
         <p className="text-lg text-gray-300 mt-6 max-w-3xl leading-relaxed">
           Hi, I’m <span className="text-blue-400 font-semibold">Kiril Kirilov</span>, a <span className="font-semibold">28-year-old transitioning into DevOps</span>. With a background in sales at Google Maps, I have developed a deep understanding of technology solutions and how they impact businesses. Now, I am shifting my focus towards **cloud automation, infrastructure as code, and DevOps best practices**.
         </p>
-        <h3 className="text-3xl font-bold text-blue-400 mt-10">💡 My DevOps Transition</h3>
+        <h3 className="text-3xl font-bold text-blue-400 mt-10"> My DevOps Transition</h3>
         <p className="text-lg text-gray-300 mt-4 max-w-3xl leading-relaxed">
           My journey into DevOps began with self-learning, practical labs, and hands-on projects. I am passionate about building efficient, automated, and scalable infrastructure. Here are the technologies I have been actively working with:
         </p>
@@ -49,12 +49,12 @@ export default function About() {
         </ul>
         <h3 className="text-3xl font-bold text-blue-400 mt-10">📖 My Learning & Projects</h3>
         <ul className="text-lg text-gray-300 mt-4 max-w-3xl leading-relaxed text-left">
-          <li>🚀 **KodeKloud & Practical Labs** – Hands-on experience with Kubernetes, Terraform, and CI/CD</li>
-          <li>🚀 **Pragmatic DevOps Essentials** – Gaining a strong foundation in automation, cloud infrastructure, and DevOps methodologies</li>
-          <li>🚀 **Personal DevOps Portfolio** – Built and deployed this site using Next.js, Vercel, and GitHub Actions</li>
-          <li>🚀 **Automated Deployments** – Implemented CI/CD pipelines with Docker & Kubernetes</li>
+          <li> KodeKloud & Practical Labs – Hands-on experience with Kubernetes, Terraform, and CI/CD</li>
+          <li>🚀 Pragmatic DevOps Essentials – Gaining a strong foundation in automation, cloud infrastructure, and DevOps methodologies</li>
+          <li>🚀 Personal DevOps Portfolio – Built and deployed this site using Next.js, Vercel, and GitHub Actions</li>
+          <li>🚀 Automated Deployments – Implemented CI/CD pipelines with Docker & Kubernetes</li>
         </ul>
-        <h3 className="text-3xl font-bold text-blue-400 mt-10">🎯 What’s Next?</h3>
+        <h3 className="text-3xl font-bold text-blue-400 mt-10"> What’s Next?</h3>
         <p className="text-lg text-gray-300 mt-4 max-w-3xl leading-relaxed">
           I am actively seeking opportunities to **start my career as a Junior DevOps Engineer**, contribute to exciting projects, and refine my expertise in cloud automation. I am eager to work with experienced teams where I can learn, grow, and make an impact.
         </p>
