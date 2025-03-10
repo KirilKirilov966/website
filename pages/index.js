@@ -5,7 +5,6 @@ import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
-import "../styles/globals.css";
 
 export default function Home() {
   const router = useRouter();
