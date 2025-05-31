@@ -53,6 +53,15 @@ export default function Home() {
           <motion.div whileHover={{ scale: 1.1 }}>
             <Link href="/contact" className="hover:text-blue-400 transition duration-300">Contact</Link>
           </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <Link
+              href="https://sharebox.kirilkirilov.net"
+              target="_blank"
+              className="hover:text-blue-400 transition duration-300"
+            >
+              ShareBox
+            </Link>
+          </motion.div>
         </nav>
       </motion.header>
 
@@ -62,7 +71,9 @@ export default function Home() {
         transition={{ duration: 1 }}
         className="flex flex-col items-center justify-center text-center py-20 px-6 relative z-10"
       >
-        <motion.h2 className="text-6xl font-extrabold text-blue-400" animate={{ scale: [1, 1.1, 1] }} transition={{ repeat: Infinity, duration: 2 }}>My DevOps Journey</motion.h2>
+        <motion.h2 className="text-6xl font-extrabold text-blue-400" animate={{ scale: [1, 1.1, 1] }} transition={{ repeat: Infinity, duration: 2 }}>
+          My DevOps Journey
+        </motion.h2>
         <p className="text-xl text-gray-300 mt-6 max-w-2xl leading-relaxed">
           Exploring cloud technologies, automation, and scalable infrastructure. Passionate about CI/CD, Kubernetes, and Terraform.
         </p>
@@ -72,6 +83,7 @@ export default function Home() {
         <motion.div className="absolute top-0 left-0 w-full h-full bg-blue-500 opacity-10 blur-3xl" animate={{ scale: [1, 1.5, 1] }} transition={{ repeat: Infinity, duration: 6 }}></motion.div>
         <h3 className="text-4xl font-bold text-center text-blue-400 relative z-10">Featured Projects</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 relative z-10">
+          {/* CI/CD */}
           <motion.div whileHover={{ scale: 1.05 }}>
             <Card>
               <CardContent className="p-6 bg-gray-900 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
@@ -83,6 +95,8 @@ export default function Home() {
               </CardContent>
             </Card>
           </motion.div>
+
+          {/* IaC */}
           <motion.div whileHover={{ scale: 1.05 }}>
             <Card>
               <CardContent className="p-6 bg-gray-900 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
@@ -90,6 +104,19 @@ export default function Home() {
                 <p className="text-gray-400 mt-3">Designed cloud infrastructure using Terraform and Ansible for automated provisioning.</p>
                 <Button className="mt-5 bg-blue-500 px-6 py-2 rounded-lg hover:bg-blue-600">
                   <Link href="https://github.com/KirilKirilov966">View Project</Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          {/* ShareBox */}
+          <motion.div whileHover={{ scale: 1.05 }}>
+            <Card>
+              <CardContent className="p-6 bg-gray-900 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+                <h4 className="text-2xl font-semibold text-blue-300">ShareBox File Upload App</h4>
+                <p className="text-gray-400 mt-3">A secure file sharing app built with Flask and Vue, deployed on Fly.io and Vercel with JWT auth.</p>
+                <Button className="mt-5 bg-blue-500 px-6 py-2 rounded-lg hover:bg-blue-600">
+                  <Link href="https://sharebox.kirilkirilov.net" target="_blank">Launch App</Link>
                 </Button>
               </CardContent>
             </Card>
